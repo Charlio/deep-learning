@@ -265,6 +265,7 @@ def test_build_nn(build_nn):
             'Outputs has wrong shape.  Found shape {}'.format(logits.get_shape())
         assert final_state.get_shape().as_list() == [test_rnn_layer_size, 2, None, test_rnn_size], \
             'Final state wrong shape.  Found shape {}'.format(final_state.get_shape())
+               
 
     _print_success_message()
 
